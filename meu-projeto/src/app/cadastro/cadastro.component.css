@@ -1,0 +1,49 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+}
+
+.form-group {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+label {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
+}
+
+input:placeholder-shown + label {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
